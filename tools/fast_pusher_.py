@@ -91,7 +91,7 @@ _THREADS = 8
 
 def Tag(name, files):
   """Perform substitutions in the provided tag name."""
-  format_args = {}
+  format_args = dict()
   for infofile in files or []:
     with open(infofile) as info:
       for line in info:
